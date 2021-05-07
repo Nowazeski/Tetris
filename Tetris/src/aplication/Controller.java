@@ -53,7 +53,46 @@ public class Controller {
 	
 	
 	//create as pedras
-	public static
+	public static Form makeRect() {
+		//random color para as pedras
+		
+		int block = (int) (Math.random() * 100);
+		String name;
+		
+		Rectangle a = new Rectangle(SIZE -1,SIZE -1),
+				b = new Rectangle(SIZE -1,SIZE -1),
+				c = new Rectangle(SIZE -1,SIZE -1),
+				d = new Rectangle(SIZE -1,SIZE -1),;
+		
+		if(block <15) {
+			a.setX(XMAX /2 - SIZE);
+			b.setX(XMAX /2 - SIZE);
+			b.setY(SIZE);
+			c.setX(XMAX /2);
+			c.setY(SIZE);
+			d.setX(XMAX/ 2 +SIZE);
+			d.setY(SIZE);
+			name = "j";
+		} else if(block <30) {
+			a.setX(XMAX / 2 + SIZE);
+			b.setX(XMAX / 2 - SIZE);
+			b.setY(SIZE);
+			c.setX(XMAX / 2 + SIZE);
+			d.setY(SIZE);
+			name = "1";
+			
+		} else if(block <45) {
+			a.setX(XMAX / 2 - SIZE);
+			b.setX(XMAX / 2 - SIZE);
+			b.setY(SIZE);
+			c.setX(XMAX / 2 + SIZE);
+			d.setY(SIZE);
+			name = "1";
+			
+			
+		}
+		
+	}
 	
 	
 	
